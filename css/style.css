@@ -1,7 +1,89 @@
-:root {
-    --main-color: #000;
-    --blue-color: #4b35ef;
-    --yellow-color: #FFBE0B;
-    --nav-bar: 50px;
-    --nav-mobile: 250px;
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+.cooltext {
+    color: #6919c4;
+}
+
+.gr_bg1 {
+    background: rgb(168,95,207);
+    background: radial-gradient(circle, rgba(168,95,207,1) 0%, rgba(47,47,87,1) 46%, rgba(209,16,153,1) 100%);
+}
+.gr_bg2 {
+    background: rgb(39,170,116);
+    background: linear-gradient(6deg, rgba(39,170,116,1) 0%, rgba(47,96,148,1) 100%);
+}
+.gr_bg3 {
+    background: rgb(35,161,205);
+    background: radial-gradient(circle, rgba(35,161,205,1) 0%, rgba(0,0,0,1) 100%);
+}
+.gr_bg4 {
+    background: rgb(131,61,196);
+    background: radial-gradient(circle, rgba(131,61,196,1) 0%, rgba(194,148,193,1) 100%);
+}
+
+.gr_bg5 {
+    background: rgb(173,86,180);
+    background: linear-gradient(56deg, rgba(173,86,180,1) 0%, rgba(57,200,204,1) 100%);
+}
+
+.welcome_logo {
+    width: 50%;
+}
+#info_box {
+    border: 2px solid #fff;
+    width: 500px;
+} 
+.bigger_font {
+    font-size: 110%;
+}
+
+/* done.html specifics */
+#done_box {
+    padding-top: 30px;
+}
+
+/* doing.html specifics */
+.aLinks {
+    color: cyan;
+}
+.aLinks:visited {
+    color: cyan;
+}
+.aLinks:hover {
+    color: goldenrod;
+}
+
+/* more.html specifics */
+.aLinks {
+    color: cyan;
+}
+.aLinks:visited {
+    color: cyan;
+}
+.aLinks:hover {
+    color: goldenrod;
+}
+
+.extra_box {
+    padding-top: 50px;
 }
