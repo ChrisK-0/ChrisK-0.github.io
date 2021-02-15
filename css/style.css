@@ -61,7 +61,7 @@ a:active {
     background: linear-gradient(56deg, rgba(173,86,180,1) 0%, rgba(57,200,204,1) 100%);
 }
 
-/* animated version*/
+/* animated version
 body {
 	background: linear-gradient(-45deg, #000000, #700fb1, #23a6d5, #200096);
 	background-size: 400% 400%;
@@ -72,11 +72,14 @@ body {
 	50% {background-position: 100% 50%;}
 	100% {background-position: 0% 50%;}
 }
+*/
 
 
 .bodyStyle {
     color: #fff;
     height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .welcome_logo {
