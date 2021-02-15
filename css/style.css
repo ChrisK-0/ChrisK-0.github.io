@@ -1,4 +1,4 @@
-/* custom font import*/
+/* custom font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
     width: 100%;
@@ -6,7 +6,6 @@ body {
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 /* anchor element specs */
 a:link {
@@ -68,7 +67,6 @@ body {
 	background-size: 400% 400%;
 	animation: gradientAnim 10s ease infinite;
 }
-
 @keyframes gradientAnim {
 	0% {background-position: 0% 50%;}
 	50% {background-position: 100% 50%;}
