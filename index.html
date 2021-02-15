@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gif_preload.css">
     <link rel="shortcut icon" type="image/jpg" href="../imgs/favicon_c.ico"/>
     <title>CCC</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!-- preloader necessity -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+    // manually activate preloader
+	$(window).load(function() {
+		$(".se-pre-con").delay(515).fadeOut("slow");
+	});
+    </script>
 </head>
-<body style="color: #fff;" class="gr_bg2">
+<body class="bodyStyle">
+<!-- pre-loader div -->
+<div class="se-pre-con"></div>
+
     <div class="container-fluid">
 
         <!-- navbar -->
         <div class="row">
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
                         <a class="navbar-brand" href="#">
                               <img src="../imgs/ccc-logo.png" width="50" height="50" alt="ccc logo">
                         </a>
@@ -27,13 +40,13 @@
                     <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="../index.html">About me</a>
+                                <a class="nav-link" id="GOTO_about" href="#about_box">About me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../done/done.html">What I've done</a>
+                                <a class="nav-link" id="GOTO_done" href="#done_box">What I've done</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../doing/doing.html">What I'm doing</a>
+                                <a class="nav-link" id="GOTO_focus" href="#focuson_box">Current focus</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../more/more.html">Extras</a>
@@ -44,26 +57,134 @@
         </div>
 
         <!-- Logo -->
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center myLogo">
+
             <div class="col-md d-flex justify-content-center">
                 <img src="../imgs/ccc-logo.png" alt="Chris' Considerable Center" width="250" height="250">
             </div>
+
         </div>
 
-        <!-- info box -->
-        <div class="row d-flex justify-content-center">
+
+        <!-- About me -->
+        <div class="row d-flex justify-content-center" id="about_box">
+
+            <div class="p-5 d-flex justify-content-center">
+                <h1>About me!</h1>
+            </div>
+
             <div class="d-flex flex-column justify-content-center gr_bg3" id="info_box">
                 <div class="p-2 d-flex justify-content-center"><p class="bigger_font">I'm Chris, a junior software developer with more interest over experience.</p></div>
-                <div class="p-2 d-flex justify-content-center"><img src="../imgs/me.jpg" alt="A photo of me" height="150" width="125" style="border: 1px solid #000;border-radius: 50%;"></div>
-                <div class="p-2 d-flex justify-content-center"> <p class="bigger_font">I am more comfortable with front-end developement, but also not afraid of learning more back-end.</p></div>
-                <div class="p-2 d-flex justify-content-center"> <p class="bigger_font">My accomplishments and current objectives can be navigated onto from the navbar.</p></div>
+                <div class="p-2 d-flex justify-content-center"><img src="../imgs/me.jpg" alt="A photo of me" height="190" width="145" style="border: 1px solid #000;border-radius: 50%;"></div>
+                <div class="p-2 d-flex justify-content-center"><p class="bigger_font">I am more comfortable with front-end developement, but also not afraid of learning more back-end.</p></div>
+                <div class="p-2 d-flex justify-content-center">
+                    <p class="bigger_font">
+                        More specifically, I enjoy meddling with jQuery and bootstrap. 
+                        I consider javascript and MySQL a challenge and to be working with these is an already pre-motivated experience.
+                    </p>    
+                </div>
+                <div class="p-2 d-flex justify-content-center"><p class="bigger_font">I am comfortable with <b>Visual Studio Code</b> and <b>Brackets</b> but do not mind trying other options.</p></div>
             </div>
         </div>
 
-          
+
+        <!-- What i've done -->
+        <div class="row d-flex justify-content-center" id="done_box">
+            
+            <div class="p-5 d-flex justify-content-center">
+                <h1>What I've done</h1>
+            </div>
+            
+            <div class="d-flex flex-column justify-content-center gr_bg5" id="info_box">
+                
+                <!-- 2020 Listings-->
+                <div class="p-2 d-flex justify-content-center">
+                    <h3>2020</h3>
+                </div>    
+
+                <div class="p-2 d-flex">
+                    <li class="bigger_font">Eesti Hackathon "9h enterprise" second place</li>
+                </div>
+
+                <div class="p-2 d-flex">
+                    <img src="/imgs/hackaton-sparkdemo.jpg" width="100%" height="100%" alt="hackaton enterprise sketch">
+                </div>
+
+                <!-- 2019 Listings-->
+                <div class="p-2 d-flex justify-content-center">
+                    <h3>2019</h3>
+                </div>    
+
+                <div class="p-2 d-flex">
+                    <li class="bigger_font">Candidate for Playtech summer open-days</li>
+                </div>
+
+                <!-- younger years -->
+                <div class="p-2 d-flex justify-content-center">
+                    <h3>2012</h3>
+                </div>  
+
+                <div class="p-2 d-flex">
+                    <li class="bigger_font">Tinkering with LUA scripting, tested and implemented a couple of add-on mods for a server in the game Garry's mod
+                    </li>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- current focus -->
+        <div class="row d-flex justify-content-center" id="focuson_box">
+
+            <div class="p-5 d-flex justify-content-center">
+                <h1>Current focus</h1>
+            </div>
+
+        <div class="d-flex flex-column justify-content-center gr_bg5" id="info_box">
+            <div class="p-2 d-flex justify-content-center">
+                <li>
+                    I am currently studying at <a href="https://khk.ee/" class="aLinks" target="_blank">Tartu Kutsehariduskeskus</a>, in more detail: 
+                </li>
+            </div>
+
+            <div class="p-2 d-flex">
+                <ul>    
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+            <div class="p-2 d-flex justify-content-center">
+                <li>
+                    Next to school on my freetime I make my own little projects with different scripts to improve the variety of my knowledge and I also love working out.
+                </li>
+            </div>
+
+        </div>
+        </div>
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- container-fluid end point -->
+
+
+
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- jQuery section -->
+    <script>
+        // Auto-scrolling. Click an anchor element on navbar!
+        $("#GOTO_about").animate({ scrollTop: $("#about_box").scrollTop() }, 1000);
+        $("#GOTO_done").animate({ scrollTop: $("#done_box").scrollTop() }, 1000);
+        $("#GOTO_focus").animate({ scrollTop: $("#focuson_box") }, 1000);
+    </script>
+
 </body>
 </html>

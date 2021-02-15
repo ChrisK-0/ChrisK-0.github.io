@@ -1,29 +1,45 @@
-
+/* custom font import*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
     width: 100%;
     height: 100vh;
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
+/* anchor element specs */
 a:link {
     text-decoration: none;
-  }
+}
   
-  a:visited {
+a:visited {
     text-decoration: none;
-  }
+}
   
-  a:hover {
+a:hover {
     text-decoration: none;
-  }
+}
   
-  a:active {
+a:active {
     text-decoration: none;
-  }
+}
 
 .cooltext {
     color: #6919c4;
 }
+/* coloring for Focus box anchors */
+.aLinks {
+    color: rgb(225, 250, 135);
+}
+.aLinks:visited {
+    color: rgb(225, 250, 135);
+}
+.aLinks:hover {
+    color: rgb(255, 203, 71);
+}
 
+/* custom gradient coloring for backgrounds */
 .gr_bg1 {
     background: rgb(168,95,207);
     background: radial-gradient(circle, rgba(168,95,207,1) 0%, rgba(47,47,87,1) 46%, rgba(209,16,153,1) 100%);
@@ -46,44 +62,60 @@ a:link {
     background: linear-gradient(56deg, rgba(173,86,180,1) 0%, rgba(57,200,204,1) 100%);
 }
 
+/* animated version*/
+body {
+	background: linear-gradient(-45deg, #000000, #700fb1, #23a6d5, #200096);
+	background-size: 400% 400%;
+	animation: gradientAnim 10s ease infinite;
+}
+
+@keyframes gradientAnim {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+.bodyStyle {
+    color: #fff;
+    height: 100%;
+}
+
 .welcome_logo {
     width: 50%;
 }
-#info_box {
-    border: 2px solid #fff;
-    width: 500px;
-} 
+
 .bigger_font {
     font-size: 110%;
 }
 
-/* done.html specifics */
+.myLogo {
+    padding-top: 100px;
+}
+
+#info_box {
+    border: 2px solid #fff;
+    border-radius: 5%;
+    width: 500px;
+} 
+
+/* about me specifics */
+#about_box {
+    padding-top: 45px;
+}
+
+/* done specifics */
 #done_box {
-    padding-top: 30px;
+    padding-top: 45px;
 }
 
-/* doing.html specifics */
-.aLinks {
-    color: cyan;
-}
-.aLinks:visited {
-    color: cyan;
-}
-.aLinks:hover {
-    color: goldenrod;
+/* current focus specifics */
+#focuson_box {
+    padding-bottom: 200px;
+    padding-top: 45px;
 }
 
-/* more.html specifics */
-.aLinks {
-    color: cyan;
-}
-.aLinks:visited {
-    color: cyan;
-}
-.aLinks:hover {
-    color: goldenrod;
-}
-
+/* extra tab specifics*/
 .extra_box {
-    padding-top: 50px;
+    padding: 50px;
 }
